@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 
 <body>
     <nav>
-        <a href="#sobremi">Sobre mí</a><a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a
-            href="#curriculum">Curriculum</a><a href="#contacteme">Contácteme</a>
+        <button id="btn-menu"><img src="img/menu.png" alt="Menu Hamburguesa"></button>
+        <h1>Lucas Ferreiro</h1>
+        <div id="menu" class="oculto">
+            <a href="#sobremi">
+                <h1>
+                    Sobre mí
+                </h1>
+            </a>
+            <a href="#habilidades">
+                <h1>
+                    Habilidades
+                </h1>
+            </a>
+            <a href="#proyectos">
+                <h1>
+                    Proyectos
+                </h1>
+            </a>
+            <a href="#curriculum">
+                <h1>
+                    Curriculum
+                </h1>
+            </a>
+            <a href="#contacteme">
+                <h1>
+                    Contácteme
+                </h1>
+            </a>
+        </div>
     </nav>
     <main>
         <section id="sobreMi">
@@ -21,7 +49,8 @@
                 </h1>
             </header>
             <p>
-                ¡Hola! Soy Lucas, tengo <span id="edad"></span> años y soy desarrollador full stack graduado en TUDAI
+                ¡Hola! Soy Lucas Manuel Ferreiro Zunino, tengo <span id="edad"></span> años y soy desarrollador full
+                stack graduado en TUDAI
                 (UNCPBA, Tandil). Me apasiona crear aplicaciones funcionales y eficientes, combinando el frontend y el
                 backend para brindar soluciones completas.
             </p>
@@ -42,24 +71,51 @@
             </header>
             <article>
                 <header>
-                    <h2>
+                    <h3>
                         Frontend
-                    </h2>
+                    </h3>
                 </header>
+                <div class="contenedor-skills">
+                    <div>
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-angularjs-plain colored"></i>
+                    </div>
+                </div>
             </article>
             <article>
                 <header>
-                    <h2>
+                    <h3>
                         Backend
-                    </h2>
+                    </h3>
                 </header>
+                <div class="contenedor-skills">
+                    <div>
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                        <i class="devicon-postgresql-plain-wordmark colored"></i>
+                        <i class="devicon-mongodb-plain-wordmark colored"></i>
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                        <i class="devicon-php-plain colored"></i>
+                        <i class="devicon-spring-original-wordmark colored"></i>
+                    </div>
+                </div>
             </article>
             <article>
                 <header>
-                    <h2>
+                    <h3>
                         Extras
-                    </h2>
+                    </h3>
                 </header>
+                <div class="contenedor-skills">
+                    <div>
+                        <i class="devicon-docker-plain-wordmark colored"></i>
+                        <i class="devicon-figma-plain colored"></i>
+                        <i class="devicon-photoshop-plain colored"></i>
+                        <i class="devicon-postman-plain colored"></i>
+                        <i class="devicon-swagger-plain colored"></i>
+                    </div>
+                </div>
             </article>
         </section>
         <section id="proyectos">
@@ -70,55 +126,116 @@
             </header>
             <article>
                 <header>
-                    titulo
+                    <h3>
+                        Api RESTfull en php
+                    </h3>
+                    <div class="tecnologias">
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                        <i class="devicon-php-plain colored"></i>
+                    </div>
                 </header>
                 <figure>
-                    <img src="" alt="imagen del proyecto">
+                    <img src="img/PHP-Api.webp" alt="Api en php">
                     <figcaption>
-                        descripcion
+                        <p>
+                            API RESTful de Autores y Libros donde cualquier consumidor va a poder acceder a nuestros
+                            catálogos de libros y autores.
+                        </p>
                     </figcaption>
                 </figure>
-                <a href=""><img src="" alt="github"></a>
-                <a href="">web</a>
+                <a target="_blank" href="https://github.com/lferreiro823/parte3">
+                    <i class="devicon-github-original colored"></i>
+                </a>
             </article>
             <article>
                 <header>
-                    titulo
+                    <h3>
+                        Sitio de videojuegos web
+                    </h3>
+                    <div class="tecnologias">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                    </div>
                 </header>
                 <figure>
-                    <img src="" alt="imagen del proyecto">
+                    <img src="img/BMO-Games.png" alt="Sitio Web BMO-Games">
                     <figcaption>
-                        descripcion
+                        <p>
+                            Este proyecto se dividió en 3 partes, en la primera realizamos un figma de la página, en la
+                            segunda la codeamos y en la tercera realizamos un 4 en raya web.
+                        </p>
+                        <p>
+                            La web cuenta con una pantalla de carga de 5 segundos y luego se puede navegar del
+                            login/registro, a la lista de juegos y solo se puede entrar al 4 en raya. Solo la lista de
+                            juegos es responsive para cumplir la consigna.
+                        </p>
                     </figcaption>
                 </figure>
-                <a href=""><img src="" alt="github"></a>
-                <a href="">web</a>
+                <a target="_blank" href="https://github.com/lferreiro823/TPEInterfacesGrupo50/tree/main/TP3/EntregaFinal">
+                    <i class="devicon-github-original colored"></i>
+                </a>
+                <a target="_blank" href="https://lferreiro823.github.io/TPEInterfacesGrupo50/TP3/EntregaFinal/registrarse.html">
+                    <i class="devicon-ie10-original colored"></i>
+                </a>
             </article>
             <article>
                 <header>
-                    titulo
+                    <h3>
+                        Página de NumberBlock
+                    </h3>
+                    <div class="tecnologias">
+                        <i class="devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                    </div>
                 </header>
                 <figure>
-                    <img src="" alt="imagen del proyecto">
+                    <img src="img/NumberBlocks.png" alt="Sitio Web NumberBlocks">
                     <figcaption>
-                        descripcion
+                        <p>
+                            A partir de un Figma tuvimos que hacer un sitio web con resolución de 1080px.
+                        </p>
+                        <p>
+                            Tuvimos que usar parallax, animaciones y modelos 3D.
+                        </p>
                     </figcaption>
                 </figure>
-                <a href=""><img src="" alt="github"></a>
-                <a href="">web</a>
+                <a target="_blank" href="https://github.com/lferreiro823/TPEInterfacesGrupo50/tree/main/TP4/EntregaFinal">
+                    <i class="devicon-github-original colored"></i>
+                </a>
+                <a target="_blank" href="https://lferreiro823.github.io/TPEInterfacesGrupo50/TP4/EntregaFinal/loading.html">
+                    <i class="devicon-ie10-original colored"></i>
+                </a>
             </article>
             <article>
                 <header>
-                    titulo
+                    <h3>
+                        Api RESTfull en java
+                    </h3>
+                    <div class="tecnologias">
+                        <i class="devicon-mysql-plain-wordmark colored"></i>
+                        <i class="devicon-mongodb-plain-wordmark colored"></i>
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                        <i class="devicon-spring-original-wordmark colored"></i>
+                    </div>
                 </header>
                 <figure>
-                    <img src="" alt="imagen del proyecto">
+                    <img src="img/SpringBoot-API.png" alt="Api en SpringBoot">
                     <figcaption>
-                        descripcion
+                        <p>
+                            Este proyecto se divide en 4 partes, donde en cada una nos comunicamos con la base de datos
+                            usando java.
+                        </p>
+                        <p>
+                            En la primera parte usamos JDBC, en la segunda JPA, en la tercera SpringBoot y en la cuarta
+                            utilizamos microservicios.
+                        </p>
                     </figcaption>
                 </figure>
-                <a href=""><img src="" alt="github"></a>
-                <a href="">web</a>
+                <a target="_blank" href="https://github.com/lferreiro823/ArquitecturaTPE">
+                    <i class="devicon-github-original colored"></i>
+                </a>
             </article>
         </section>
         <section id="curriculum">
@@ -127,7 +244,13 @@
                     Curriculum
                 </h1>
             </header>
-            <a href="cv-tu-nombre.pdf" download="CV-TuNombre" style="text-decoration: none;">
+            <a target="_blank" href="files/Lucas Ferreiro CV.pdf">
+                <button>
+                    <h3>
+                        Ver PDF
+                    </h3>
+                </button>
+            </a>
         </section>
         <section id="contacteme">
             <header>
@@ -135,9 +258,35 @@
                     Contácteme
                 </h1>
             </header>
+            <div>
+                <a target="_blank" href="https://www.linkedin.com/in/lucas-manuel-ferreiro-zunino/">
+                <i class="devicon-linkedin-plain colored"></i>
+                </a>
+                <a href="mailto:lferreiro.823@gmail.com" id="btn-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="3rem" height="3rem" viewBox="0 0 48 48">
+                        <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+                        <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>
+                        <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17">
+                        </polygon>
+                        <path fill="#c62828"
+                            d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z">
+                        </path>
+                        <path fill="#fbc02d"
+                            d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
         </section>
     </main>
+    <div id="contenedorMensajeCorreo" class="oculto">
+        <p id="mensajeCorreoCopiado" class="oculto">
+            Se copió el correo lferreiro.823@gmail.com al portapapel.
+        </p>
+    </div>
     <script src="js/edad.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/email.js"></script>
 </body>
 
 </html>
